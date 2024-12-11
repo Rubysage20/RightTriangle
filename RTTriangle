@@ -1,0 +1,70 @@
+import java.lang.Math;
+public class RTTriangle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		public class RightTriangle {
+		//Declare attributes
+		double base;
+		double height;
+		double hypotenuse;
+		
+		// constructor without parameters 
+		//Constructor
+		public RightTriangle () {
+			this.base=0;
+			this.height=0;
+		}
+		
+		// Constructor with parameters
+		public RightTriangle(double base, double height) {
+			this.base = base;
+			this.height = height;
+			this.hypotenuse = calculateHypotenuse(); 
+		}
+		// Method to calculate the hypotenuse using the Pythagorean theorem
+		private double calculateHypotenuse() { 
+			return Math.sqrt((base * base) + (height * height));
+		}
+		// Get the hypotenuse 
+		public double getHypotenuse() {
+			return hypotenuse;
+		}
+		// Set the base 
+		public void setBase(double base) {
+			this.base = base;
+			this.hypotenuse = calculateHypotenuse();
+		}
+		
+		// Get the base 
+		public double getBase() {
+			return base; 
+		}
+		
+		// Set the height 
+		public void setHeight(double height) {
+			this.height = height;
+			this.hypotenuse = calculateHypotenuse();
+		}
+		
+		// Get the height 
+		public double getHeight() {
+			return height; 
+		}
+		
+		// Calculate the perimeter 
+		public double getPerimeter() {
+			return base + height + hypotenuse;
+		}
+		// Calculate the area 
+		public double getArea() {
+			return (base * height) /2;
+		}
+
+		}
+	}
+		
+	}
+
+
